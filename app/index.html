@@ -1,119 +1,119 @@
 <!doctype html>
 <html>
-    <head>
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-	<meta charset="utf-8">
-        <title>MaryTTS Demonstration Interface</title>
-	<title></title>
-	<meta name="description" content="">
-	<meta name="author" content="MaryTTS Team">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title>MaryTTS Demonstration Interface</title>
+    <title></title>
+    <meta name="description" content="">
+    <meta name="author" content="MaryTTS Team">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-	<!-- build:css(.tmp) styles/main.css -->
-	<link rel="stylesheet" href="styles/marytts-custom.css">
-	<link href="styles/fa-svg-with-js.css" rel="stylesheet">
-	<!-- endbuild -->
-    </head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="styles/marytts-custom.css">
+    <link href="styles/fa-svg-with-js.css" rel="stylesheet">
+    <!-- endbuild -->
+  </head>
 
-    <body ng-app="MaryTTSHTMLFrontEnd">
-	<!--[if lte IE 8]>
-	    <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-	<![endif]-->
+  <body ng-app="MaryTTSHTMLFrontEnd">
+    <!--[if lte IE 8]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
 
-	<!-- Add your site or application content here -->
+    <!-- Add your site or application content here -->
 
-	<!--
-	<div class="header">
-	    <div class="jumbotron text-center">
-		<img src="images/marylogo.png" />
-		<p class="text-muted">An Open-Source, Multilingual Text-to-Speech Synthesis Platform</p>
-		<p><a href="http://mary.dfki.de/" target="_blank" class="btn btn-default btn-sm">Learn more</a></p>
-	    </div>
-	</div>
-	-->
-
-
-	<div class="container">
-		<header class="p-3 mb-2 bg-secondary text-white rounded">
-			<h1>MaryTTS</h1>
-		</header>
-
-	    <div ng-view=""></div>
-	</div>
+    <!--
+	 <div class="header">
+	 <div class="jumbotron text-center">
+	 <img src="images/marylogo.png" />
+	 <p class="text-muted">An Open-Source, Multilingual Text-to-Speech Synthesis Platform</p>
+	 <p><a href="http://mary.dfki.de/" target="_blank" class="btn btn-default btn-sm">Learn more</a></p>
+	 </div>
+	 </div>
+    -->
 
 
+    <div class="container-fluid">
+      <header class="p-3 mb-2 bg-secondary text-white rounded">
+	<h1>MaryTTS</h1>
+      </header>
 
-	<!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
-	<script>
-	 !function(A,n,g,u,l,a,r){A.GoogleAnalyticsObject=l,A[l]=A[l]||function(){
-	     (A[l].q=A[l].q||[]).push(arguments)},A[l].l=+new Date,a=n.createElement(g),
-				  r=n.getElementsByTagName(g)[0],a.src=u,r.parentNode.insertBefore(a,r)
-	 }(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-	 ga('create', 'UA-XXXXX-X');
-	 ga('send', 'pageview');
-	</script>
+      <div ng-view=""></div>
+    </div>
 
 
-	<!-- build:js(.) scripts/vendor.js -->
-	<!-- bower:js -->
-	<script src="bower_components/jquery/dist/jquery.js"></script>
-	<script src="bower_components/angular/angular.js"></script>
-	<script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
-	<script src="bower_components/angular-animate/angular-animate.js"></script>
-	<script src="bower_components/angular-cookies/angular-cookies.js"></script>
-	<script src="bower_components/angular-resource/angular-resource.js"></script>
-	<script src="bower_components/angular-route/angular-route.js"></script>
-	<script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
-	<script src="bower_components/angular-touch/angular-touch.js"></script>
-	<script src="bower_components/blob-polyfill/Blob.js"></script>
-	<script src="bower_components/file-saver.js/FileSaver.js"></script>
-	<script src="bower_components/angular-file-saver/dist/angular-file-saver.bundle.js"></script>
-	<!-- endbower -->
-	<!-- endbuild -->
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
+    <script>
+     !function(A,n,g,u,l,a,r){A.GoogleAnalyticsObject=l,A[l]=A[l]||function(){
+       (A[l].q=A[l].q||[]).push(arguments)},A[l].l=+new Date,a=n.createElement(g),
+			      r=n.getElementsByTagName(g)[0],a.src=u,r.parentNode.insertBefore(a,r)
+     }(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+     ga('create', 'UA-XXXXX-X');
+     ga('send', 'pageview');
+    </script>
 
 
-	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
-        <!-- build:js({.tmp,app}) scripts/scripts.js -->
-        <script src="scripts/app.js"></script>
-        <script src="scripts/workers/spectroDrawingWorkerClass.js"></script>
-        <script src="scripts/workers/textGridParserWorkerClass.js"></script>
-        <script src="scripts/controllers/main.js"></script>
-        <script src="scripts/controllers/about.js"></script>
-        <script src="scripts/controllers/run.js"></script>
-        <script src="scripts/directives/configuration.js"></script>
-        <script src="scripts/directives/audiocontrols.js"></script>
-        <script src="scripts/directives/inputtext.js"></script>
-        <script src="scripts/directives/textresults.js"></script>
-        <script src="scripts/directives/osci.js"></script>
-        <script src="scripts/directives/spectro.js"></script>
-        <script src="scripts/directives/level.js"></script>
-        <script src="scripts/directives/log.js"></script>
-
-	<!-- Services -->
-	    <script src="scripts/services/AnnotService.js"></script>
-        <script src="scripts/services/appStateService.js"></script>
-        <script src="scripts/services/MaryService.js"></script>
-		<script src="scripts/services/playService.js"></script>
-        <script src="scripts/services/Wavparserservice.js"></script>
-        <script src="scripts/services/browserDetector.js"></script>
-        <script src="scripts/services/drawhelperservice.js"></script>
-        <script src="scripts/services/mathhelperservice.js"></script>
-        <script src="scripts/services/moduleSequenceService.js"></script>
-        <script src="scripts/services/downloadService.js"></script>
-        <script src="scripts/prototypeexpansions.js"></script>
-  		<script src="scripts/services/Textgridparserservice.js"></script>
-    	<script src="scripts/services/fontScaleService.js"></script>
-    	<script src="scripts/services/mouseService.js"></script>
+    <!-- build:js(.) scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+    <script src="bower_components/angular-touch/angular-touch.js"></script>
+    <script src="bower_components/blob-polyfill/Blob.js"></script>
+    <script src="bower_components/file-saver.js/FileSaver.js"></script>
+    <script src="bower_components/angular-file-saver/dist/angular-file-saver.bundle.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
 
 
-  		<script src="scripts/font-awesome/fontawesome-all.js"></script>
-        <!-- endbuild -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
-    </body>
+    <!-- build:js({.tmp,app}) scripts/scripts.js -->
+    <script src="scripts/app.js"></script>
+    <script src="scripts/workers/spectroDrawingWorkerClass.js"></script>
+    <script src="scripts/workers/textGridParserWorkerClass.js"></script>
+    <script src="scripts/controllers/main.js"></script>
+    <script src="scripts/controllers/about.js"></script>
+    <script src="scripts/controllers/run.js"></script>
+    <script src="scripts/directives/configuration.js"></script>
+    <script src="scripts/directives/audiocontrols.js"></script>
+    <script src="scripts/directives/inputtext.js"></script>
+    <script src="scripts/directives/textresults.js"></script>
+    <script src="scripts/directives/osci.js"></script>
+    <script src="scripts/directives/spectro.js"></script>
+    <script src="scripts/directives/level.js"></script>
+    <script src="scripts/directives/log.js"></script>
+
+    <!-- Services -->
+    <script src="scripts/services/AnnotService.js"></script>
+    <script src="scripts/services/appStateService.js"></script>
+    <script src="scripts/services/MaryService.js"></script>
+    <script src="scripts/services/playService.js"></script>
+    <script src="scripts/services/Wavparserservice.js"></script>
+    <script src="scripts/services/browserDetector.js"></script>
+    <script src="scripts/services/drawhelperservice.js"></script>
+    <script src="scripts/services/mathhelperservice.js"></script>
+    <script src="scripts/services/moduleSequenceService.js"></script>
+    <script src="scripts/services/downloadService.js"></script>
+    <script src="scripts/prototypeexpansions.js"></script>
+    <script src="scripts/services/Textgridparserservice.js"></script>
+    <script src="scripts/services/fontScaleService.js"></script>
+    <script src="scripts/services/mouseService.js"></script>
+
+
+    <script src="scripts/font-awesome/fontawesome-all.js"></script>
+    <!-- endbuild -->
+
+  </body>
 </html>

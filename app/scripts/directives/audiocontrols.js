@@ -16,12 +16,9 @@ angular.module('MaryTTSHTMLFrontEnd')
 					if(newVal!==oldVal){
 						$("#shifting_bar").val(newVal);
 						var currentRatio = 100-parseInt((scope.app.getStop()-scope.app.getStart())/(scope.app.stopMax-scope.app.startMin)*100);
-						console.log(currentRatio);
 						$("#zooming_bar").val(currentRatio);
 					}
 				});
-
-				scope
 
 				scope.zoomIn = function(){
 					//if start / stop !== undefined
@@ -40,7 +37,7 @@ angular.module('MaryTTSHTMLFrontEnd')
 						var distance = scope.app.getStop()-scope.app.getStart();
 						var distance2 = distance * 4/3; //dezoom of 25%
 						scope.app.setStartStop(scope.app.getStart()-(distance2-distance)*0.5,scope.app.getStop()+(distance2-distance)*0.5);
-	
+
 					}
 				};
 
@@ -51,9 +48,9 @@ angular.module('MaryTTSHTMLFrontEnd')
 						var newStartS = scope.app.getStart() - ~~((scope.app.getStop() - scope.app.getStart()) / 4);
 						var newEndS = scope.app.getStop() - ~~((scope.app.getStop() - scope.app.getStart()) / 4);
 						if(newStartS>0){
-							scope.app.setStartStop(newStartS,newEndS);	
+							scope.app.setStartStop(newStartS,newEndS);
 						}else{
-							scope.app.setStartStop(0,scope.app.getStop()-scope.app.getStart());	
+							scope.app.setStartStop(0,scope.app.getStop()-scope.app.getStart());
 						}
 
 					}
@@ -67,12 +64,12 @@ angular.module('MaryTTSHTMLFrontEnd')
 						var newStartS = scope.app.getStart() + ~~((scope.app.getStop() - scope.app.getStart()) / 4);
 						var newEndS = scope.app.getStop() + ~~((scope.app.getStop() - scope.app.getStart()) / 4);
 						if(newEndS<scope.bs.audioBuffer.length){
-							scope.app.setStartStop(newStartS,newEndS);	
+							scope.app.setStartStop(newStartS,newEndS);
 						}else{
 							scope.app.setStartStop(scope.app.getStart()+(scope.bs.audioBuffer.length-scope.app.getStop()),scope.bs.audioBuffer.length);	//pas bon si déjà au bout
 						}
 					}
-				};		
+				};
 
 				scope.zoom = function(event) { //should work
 					if((scope.app.getStart()!==undefined)&&(scope.app.getStop()!==undefined)){
@@ -86,16 +83,16 @@ angular.module('MaryTTSHTMLFrontEnd')
 						var newStop = middlePoint+distance2*0.5;
 
 						if(newStart<scope.app.startMin){ //If new start is below startMin, we shift to startMin
-							newStop = newStop + (scope.app.startMin - newStart); 
+							newStop = newStop + (scope.app.startMin - newStart);
 							newStart = scope.app.startMin;
 						} else if (newStop>scope.app.stopMax){ //If newStop is above stopMax, we shift to newStop
-							newStart = newStart - (scope.app.stopMax - newStop); 
-							newStop = scope.app.stopMax;							
+							newStart = newStart - (scope.app.stopMax - newStop);
+							newStop = scope.app.stopMax;
 						}
 
 						scope.app.setStartStop(newStart,newStop);
 
-					}					
+					}
 				}
 
 				scope.shift = function(event) {
@@ -108,7 +105,7 @@ angular.module('MaryTTSHTMLFrontEnd')
 						} else {
 							scope.app.setStartStop(value,end);
 						}
-					}					
+					}
 				}
 
 				scope.play = function(){

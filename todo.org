@@ -1,0 +1,10 @@
+* MaryTTS HTML Frontend
+:PROPERTIES:
+:CATEGORY: tools
+:END:
+** TODO Fix configuration module to be put to the main configuration part
+** TODO Fix the wav rendering when configuration text is selected
+** TODO Formatting all the files and add formatting tools
+** TODO Add ace support for global configuration
+** TODO Refactor to add support of ace for local support
+** TODO See for the ace bug when JSON is validated

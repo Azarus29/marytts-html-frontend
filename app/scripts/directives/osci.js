@@ -16,14 +16,14 @@ angular.module('MaryTTSHTMLFrontEnd')
 				scope.bs = MaryService;
 				scope.ass = appStateService;
 				scope.ms = mouseService;
-				
-				scope.start = undefined; 
+
+				scope.start = undefined;
 				scope.stop = undefined;
 
-				
+
 
 				//watching when the audio signal is available
-				scope.$watch('bs.getAudioBuffer()', function(newValue, oldValue){
+			    scope.$watch('bs.getAudioBuffer()', function(newValue, oldValue){
 					if ((newValue!==undefined)&&(oldValue!==newValue)) {
 						scope.start = 0;
 						scope.stop = scope.bs.getAudioBuffer().length;

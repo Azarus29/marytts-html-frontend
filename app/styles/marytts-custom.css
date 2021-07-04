@@ -2,16 +2,6 @@
     font-size: 30px;
 }
 
-.container {
-    width:1280px;
-}
-/*@media screen and (min-width: 768px){
-    .jumbotron {
-        padding-top: 25px !important;
-        padding-bottom: 25px !important;
-    }
-}*/
-
 .osciContainer {
   position: relative;
 }
